@@ -1,0 +1,512 @@
+/* Estilo general */
+body  {
+    margin: 0; /* Elimina márgenes predeterminados */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fuente general */
+    color: #333; /* Color del texto */
+    
+
+}
+
+/* Header */
+header {
+    background-color: #432918; 
+    color: #cbbba0; 
+    padding: 25px 0; /* Espaciado interno */
+    text-align: right; 
+}
+
+
+
+
+/* Navegación */
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Coloca los elementos en línea */
+    margin-right: 15px; /* Espaciado entre los elementos */
+}
+
+nav ul li a {
+    color: #cbbba0; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    height: 300px; /* Ajusta el tamaño del logo */
+    position: absolute;
+    top: -95px;
+    left: 90px; 
+}
+
+/* Título principal */
+/* Para que todo el contenido se posicione sobre la imagen */
+main {
+    position: relative;
+}
+
+body.pagina-principal main h1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 2;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 2.5rem;
+    color: #cbbba0;
+    margin: 6px;
+}
+
+/* Que el contenedor sea fondo completo */
+.contenedor {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* La imagen cubre todo */
+.imagen-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+/* Frase también sobre la imagen */
+.frase {
+    position: relative;
+    z-index: 1;
+    color: #cbbba0;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:160px;
+    margin-left: 30px;
+}
+
+
+.footer {
+    background-color:#432918;
+    padding: 10px 25px;
+    font-size: 15px;
+    color: #cbbba0;
+}
+
+/* Footer container en fila */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+/* Cada bloque */
+.footer-section {
+    flex: 1;
+    min-width: 180px;
+}
+
+/* Newsletter se alinea a la derecha */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -110px; /* sube el bloque hacia el resto (ajustable) */
+}
+
+/* Formulario */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.newsletter .hoja {
+    margin-right: 30px; /* Ajustá el valor según lo que necesites */
+}
+
+.newsletter-form input {
+    padding: 5px;
+    width: 200px;
+}
+
+.redes a{
+    text-decoration: none;
+    color: #cbbba0;
+}
+.newsletter-form button {
+    padding: 5px 10px;
+    background-color: #432918;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.newsletter-form button:hover {
+    background-color: #cbbba0;  
+    color: #432918;            
+    cursor: pointer;            
+}
+
+
+/* Línea inferior */
+.footer-copy {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #432918;
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Estilo para la sección de "Nosotros" */
+.main-nosotros {
+    background-color: #cbbba0;
+    padding-bottom:60px ;
+    
+}
+
+.intro-nosotros {
+    width: 100%;
+    text-align: center;
+
+}
+
+.intro-nosotros h1 {
+    font-size: 32px;
+    color: #432918;
+    margin: 40px 0 20px;
+}
+
+.imagen-banner {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transform: none;
+}
+
+
+.contenido-nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.columna {
+    flex: 1;
+    min-width: 250px;
+}
+
+.columna h2 {
+    font-size: 24px;
+    color: #432918;
+    margin-bottom: 10px;
+    
+}
+
+.columna p {
+    font-size: 16px;
+    color: #432918;
+    line-height: 1.5;
+    margin: 10px;
+}
+
+.imagen-central {
+    flex: 1;
+    min-width: 300px;
+}
+
+.imagen-central img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+
+}
+
+/* Estilo para la sección de servicios */
+.servicios {
+    background-color: #cbbba0 ;
+    
+    
+}
+.imagen-banner-servicios {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transform: none;
+    
+}
+
+
+
+.servicios h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 2.5rem; /* Ajusta el tamaño del texto */
+    color: #432918; /* Cambia el color del texto */
+    margin: 20px auto; /* Asegura espacio arriba y abajo y centra horizontalmente */
+}
+.contenedor-servicios {
+    display: grid; /*  Grid */
+    grid-template-columns: repeat(2, 1fr); /* Columnas responsivas */
+    gap: 50px; 
+    padding: 80px; 
+}
+
+.contenedor-servicios div {
+    text-align: center; /* Centra el contenido dentro de cada celda */
+    background-color: #432918; 
+    border-radius: 10px; 
+    padding: 15px; 
+    
+}
+
+.contenedor-servicios img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    height: 500px; /* Mantiene la proporción de las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: cover; /* Ajusta la imagen para que se recorte si es necesario */
+}
+
+.contenedor-servicios h2 {
+    font-size: 1.5rem;
+    color: #cbbba0;
+    margin: 10px 0;
+}
+
+.contenedor-servicios p {
+    font-size: 1rem;
+    color: #cbbba0;
+    line-height: 1.5;
+}
+
+/*Estilo para la sección de menú*/
+.menu {
+    background-color: #cbbba0;
+}
+
+.menu h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 2.5rem; /* Ajusta el tamaño del texto */
+    color: #432918; /* Cambia el color del texto */
+  
+}
+    
+
+.imagen-banner-menu {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transform: none;
+    
+}
+.grilla-cafes {
+    display: grid; /* Activa CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+    grid-template-rows: auto; /* Las filas se ajustan automáticamente */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px; /* Espaciado interno */
+    justify-items: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+   
+}
+
+.cafe {
+    text-align: center; /* Centra el contenido dentro de cada celda */
+    background-color: #432918; /* Fondo claro para destacar */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar un pocoprofundidad */
+}
+
+.menu h2{
+color: #cbbba0;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+#main-contacto {
+    background-color: #cbbba0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;  /* Centra el texto */
+    padding: 40px 20px;
+    min-height: 100vh; /* Ocupar toda la altura de la ventana */
+    box-sizing: border-box;
+}
+
+#main-contacto h1 {
+    font-size: 2.5rem;
+    color: #432918;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto {
+    max-width: 600px;
+    width: 100%;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left; /* Para que las etiquetas no queden centradas */
+}
+
+.formulario-contacto form input,
+.formulario-contacto form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #cbbba0;
+    border-radius: 5px;
+}
+
+.formulario-contacto form button {
+    background-color: #432918;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.formulario-contacto form button:hover {
+    background-color: #2d1a0f;
+}
+
+
+/* --- RESPONSIVE --- */
+
+
+/* Para tablets (hasta 992px) */
+@media (max-width: 992px) {
+    /* Ajuste del logo */
+    .logo {
+        height: 200px;
+        top: -60px;
+        left: 30px;
+    }
+
+    /* Ajuste del h1 */
+    body.pagina-principal main h1 {
+        font-size: 2rem;
+        top: 8%;
+        left: 8%;
+    }
+
+    /* Ajuste de la frase */
+    .frase {
+        font-size: 1.1rem;
+        margin-top: 160px;
+        padding: 40px;
+    }
+
+    /* Ajuste grilla de servicios */
+    .contenedor-servicios {
+        grid-template-columns: 1fr; /* Una columna */
+        padding: 40px;
+    }
+
+    /* Ajuste grilla de cafés */
+    .grilla-cafes {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+        gap: 20px;
+    }
+
+    /* Bajar altura de banners */
+    .imagen-banner,
+    .imagen-banner-servicios,
+    .imagen-banner-menu {
+        height: 500px;
+    }
+}
+
+/* Para móviles (hasta 600px) */
+@media (max-width: 600px) {
+    /* Header y navegación */
+    header {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block; /* Elementos uno debajo del otro */
+        margin: 10px 0;
+    }
+
+    /* Ajuste del logo */
+    .logo {
+        height: 120px;
+        top: -30px;
+        left: 20px;
+    }
+
+    /* Ajuste del h1 */
+    body.pagina-principal main h1 {
+        font-size: 1.8rem;
+        top: 5%;
+        left: 5%;
+    }
+
+    /* Ajuste de la frase */
+    .frase {
+        font-size: 1rem;
+        margin-top: 180px; /* La frase baja más para que no se junte con el h1 */
+        padding: 30px;
+    }
+
+    /* Ajuste grilla de servicios */
+    .contenedor-servicios {
+        padding: 20px;
+    }
+
+    /* Ajuste grilla de cafés */
+    .grilla-cafes {
+        grid-template-columns: 1fr; /* Una columna */
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column; /* Footer en columnas verticales */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .newsletter {
+        margin-top: 0;
+        align-items: center;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    /* Bajar altura de banners */
+    .imagen-banner,
+    .imagen-banner-servicios,
+    .imagen-banner-menu {
+        height: 300px;
+    }
+}

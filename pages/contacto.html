@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Caffino</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../images/Logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-contacto">
+        <h1>Contacto</h1>
+        <section class="formulario-contacto">
+            <p>¿Tenés alguna consulta, sugerencia o querés comunicarte con nosotros?</p>
+            
+            <form action="mailto:tuemail@ejemplo.com" method="post" enctype="text/plain">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto">
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lunes a Viernes: 8:00 - 20:00</p>
+                    <p>Sábados y Domingos: 9:00 - 18:00</p>
+                </div>
+    
+                <div class="footer-section">
+                    <h4>Dirección</h4> 
+                    <p>Herrera 510, Canelones,Uruguay</p>
+                </div>
+    
+                <div class="footer-section">
+                    <h4>Redes Sociales</h4>
+                    <p class="redes">
+                        <a href="#">Instagram</a><br>
+                        <a href="#">TikTok</a>
+                    </p>
+                </div>
+            </div>
+    
+            <div class="footer-section newsletter">
+                <h4 class="hoja">Hoja Informativa</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+    
+            <div class="footer-copy">
+                <p>&copy; 2025 Caffino. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>
